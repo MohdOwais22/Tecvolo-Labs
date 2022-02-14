@@ -13,6 +13,7 @@ html {
     float: right;
     min-height: 100vh;
     background-size: cover;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
   }
 
   .container{
