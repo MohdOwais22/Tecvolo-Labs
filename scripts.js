@@ -1,5 +1,5 @@
 
-// get all the elements
+// getting elements
 const player = document.querySelector('.player');
 const video = player.querySelector('.viewer');
 const progress = player.querySelector('.progress');
@@ -12,11 +12,10 @@ const fullscreen = player.querySelector('.fullscreen');
 
 
 
-// build our function
+// building functions
 
 function togglePlay() {
     const method = video.paused ? 'play' : 'pause';
-//because method name is in string here
     video[method]();  
 }
 
@@ -62,7 +61,7 @@ var keyCode = e.keyCode;
   }
 }
 
-// hook up the event listener
+//event listeners
 video.addEventListener('click', togglePlay); 
 video.addEventListener('play', updateButton); 
 video.addEventListener('pause', updateButton); 
