@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Custom Player</title>
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <h3>PlayList</h3>
+      <ul id="playlist">
+        <li><video class="player__video1 viewer" src="sample1.mp4" poster="zero.jpg"></video>This is Sample video 1</li>
+        <li><video class="player__video1 viewer" src="sample2.mp4" poster="two.jpg"></video>This is Sample video 2</li>
+        <li><video class="player__video1 viewer" src="sample3.mp4" poster="three.jpg"></video>This is Sample video 3</li>
+        <li><video class="player__video1 viewer" src="sample4.mp4" poster="four.jpg"></video>This is Sample video 4</li>
+        <li><video class="player__video1 viewer" src="sample5.mp4" poster="five.jpg"></video>This is Sample video 5</li>
+        
+    </ul>
+    </div>
+    <div class="player">
+        <video class="player__video viewer" src="sample.mp4" poster="one.jpg"></video>
+   
+        <div class="player__controls">
+          <div class="progress">
+           <div class="progress__filled"></div>
+          </div>
+          <button class="player__button toggle" title="Toggle Play">►</button>
+          <input type="range" name="volume" class="player__slider" min="0" max="1" step="0.05" value="1">
+          <input type="range" name="playbackRate" class="player__slider" min="0.5" max="2" step="0.1" value="1">
+          <button data-skip="-10" class="player__button">« 10s</button>
+          <button data-skip="10" class="player__button">10s »</button>
+          <button class="fullscreen control player__button">⁅ ⁆</button>
+        </div>
+      </div>
+      
+    </div>
+   
+     <script src="scripts.js"></script>
+    
+</body>
+</html>
